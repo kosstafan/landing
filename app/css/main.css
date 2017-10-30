@@ -299,6 +299,15 @@ ul {
       -ms-flex-pack: distribute;
           justify-content: space-around; }
 
+.reviews__content_active {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .reviews__title {
   font-family: 'gagalinregular';
   color: #fff;
