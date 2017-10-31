@@ -46,8 +46,7 @@ ul {
   padding: 0; }
 
 .wrapper {
-  width: 1100px;
-  margin: 0 auto; }
+  width: 100%; }
 
 .container {
   margin: 0 auto;
@@ -64,6 +63,31 @@ ul {
   background-position: center;
   background-repeat: no-repeat; }
 
+.fixed-nav {
+  position: fixed;
+  z-index: 22;
+  right: 50px;
+  top: 90px; }
+
+.fixed-nav__item {
+  color: #fff;
+  width: 18px;
+  height: 18px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  text-align: center;
+  list-style-type: none;
+  margin-bottom: 5px; }
+
+.fixed-nav__link {
+  text-decoration: none;
+  color: #fff;
+  line-height: 18px;
+  font-size: 24px; }
+
+.fixed-nav__item_active {
+  border: 1px solid #fff; }
+
 .header {
   display: -webkit-flex;
   display: -moz-flex;
@@ -73,10 +97,13 @@ ul {
   display: -ms-flexbox;
   display: flex;
   font-family: 'ubunturegular';
-  padding-top: 10px; }
+  padding-top: 10px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .top-logo {
-  background-image: url(../img/logo.png);
   width: 92px;
   height: 69px; }
 
@@ -99,14 +126,13 @@ ul {
   text-transform: uppercase;
   margin-right: 36px;
   font-size: 13px; }
-  .nav__line:last-child {
-    margin-left: -15px;
-    margin-right: 0; }
   .nav__line:first-child {
     list-style-type: none; }
 
 .header__btn {
-  list-style-type: none; }
+  list-style-type: none;
+  margin-left: -15px;
+  margin-right: 0; }
 
 .order {
   color: #fff;
@@ -198,7 +224,6 @@ ul {
   width: 100%;
   min-height: 650px;
   height: 100vh;
-  background-color: #000;
   background-image: url(../img/bg-webest.jpg);
   background-position: center;
   -webkit-background-size: cover;
@@ -209,7 +234,9 @@ ul {
   text-align: center;
   font-family: 'gagalinregular';
   color: #333538;
-  font-size: 72px; }
+  font-size: 72px;
+  padding-top: 80px;
+  padding-bottom: 80px; }
 
 .best-list {
   display: -webkit-flex;
@@ -229,19 +256,23 @@ ul {
   text-align: center;
   width: 33%; }
 
-.best-item-title {
+.best-list__item span {
   font-family: 'lifehackmedium';
   font-size: 24px;
   color: #2f3234; }
 
-.best-item-txt {
+.best-list__item p {
   font-family: 'ubunturegular';
   font-size: 14px;
+  line-height: 24px;
   color: #2f3234; }
+
+.best-item-pic {
+  padding-bottom: 30px; }
 
 .reviews {
   width: 100%;
-  height: 650px; }
+  height: 100vh; }
 
 .reviews-list {
   display: -webkit-flex;
@@ -263,52 +294,58 @@ ul {
 .reviews__item {
   list-style-type: none;
   width: 25%;
-  height: 325px;
+  height: 50%;
   margin: 0;
   padding: 0;
   position: relative; }
   .reviews__item:hover .reviews__content {
-    display: -webkit-box;
     display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
 
 .reviews__img {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  min-width: 100%;
+  min-height: 100%; }
 
 .reviews__content {
   position: absolute;
   top: 0;
   z-index: 1;
   background-color: rgba(68, 69, 70, 0.7);
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  height: 100%;
   display: none;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  -o-flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; }
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 30px;
+  overflow: hidden; }
 
 .reviews__title {
   font-family: 'gagalinregular';
   color: #fff;
   font-size: 14px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 50px;
+  padding-bottom: 30px; }
 
 .reviews__txt {
-  font-family: 'ubunturegular';
+  font-family: 'ubuntulight';
   color: #fff;
-  font-size: 14px; }
+  font-size: 14px;
+  line-height: 24px; }
+
+.reviews__btn {
+  margin-top: auto;
+  margin-bottom: 60px; }
 
 .reviews__link {
   text-decoration: none;
@@ -322,3 +359,71 @@ ul {
           border-radius: 5px; }
   .reviews__link:hover {
     background-color: #242627; }
+
+.team {
+  margin: 0;
+  width: 100%;
+  min-height: 650px;
+  height: 100vh;
+  background-image: url(../img/team-bg.jpg);
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.team-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background-color: rgba(47, 50, 52, 0.93); }
+
+.team-content__title {
+  font-family: 'gagalinregular';
+  font-size: 72px;
+  color: #f9b43b; }
+
+.accordeon__line {
+  list-style-type: none; }
+
+.team-member__name {
+  font-family: 'gagalinregular';
+  color: #fff;
+  font-size: 14px; }
+
+.team-member__content {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0;
+  overflow: hidden; }
+
+.team-member__foto {
+  background-image: url(../img/aphex-jpg.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+
+.team-member__description {
+  width: 210px;
+  font-size: 14px;
+  color: #fff; }
+
+.team-member__position {
+  font-family: "ubuntubold"; }
+
+.team-member__about {
+  font-family: 'ubuntulight'; }
+
+.team-member__content_active {
+  height: auto; }
