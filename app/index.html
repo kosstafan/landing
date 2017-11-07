@@ -2,24 +2,25 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/main.css"> <!-- Подключаем CSS -->
 </head>
 <body>
 	<div class="wrapper">
-	<nav class="fixed-nav">
-				<li class="fixed-nav__item fixed-nav__item_active"><a href="#" class="fixed-nav__link">&#8226;</a></li>
-				<li class="fixed-nav__item"><a href="#" class="fixed-nav__link">&#8226;</a></li>
-				<li class="fixed-nav__item"><a href="#" class="fixed-nav__link">&#8226;</a></li>
-				<li class="fixed-nav__item"><a href="#" class="fixed-nav__link">&#8226;</a></li>
-				<li class="fixed-nav__item"><a href="#" class="fixed-nav__link">&#8226;</a></li>
-				<li class="fixed-nav__item"><a href="#" class="fixed-nav__link">&#8226;</a></li>
-				<li class="fixed-nav__item"><a href="#" class="fixed-nav__link">&#8226;</a></li>
-				<li class="fixed-nav__item"><a href="#" class="fixed-nav__link">&#8226;</a></li>
-			</nav>
-		<section class="top">
-			
-			<div class="container">
+		<nav class="fixed-nav">
+			<li class="fixed-nav__item fixed-nav__item_active"><a href="#" class="fixed-nav__link">&#8226;</a></li>
+			<li class="fixed-nav__item"><a href="#" class="fixed-nav__link">&#8226;</a></li>
+			<li class="fixed-nav__item"><a href="#" class="fixed-nav__link">&#8226;</a></li>
+			<li class="fixed-nav__item"><a href="#" class="fixed-nav__link">&#8226;</a></li>
+			<li class="fixed-nav__item"><a href="#" class="fixed-nav__link">&#8226;</a></li>
+			<li class="fixed-nav__item"><a href="#" class="fixed-nav__link">&#8226;</a></li>
+			<li class="fixed-nav__item"><a href="#" class="fixed-nav__link">&#8226;</a></li>
+			<li class="fixed-nav__item"><a href="#" class="fixed-nav__link">&#8226;</a></li>
+		</nav>
+		<section class="section top">
+			<div class="container container_center container_center-vertical container_center-vertical-top">
 				<header class="header">
 					<div class="top-logo">
 						<img class="top-logo__img" src="img/logo.svg"/>
@@ -45,11 +46,15 @@
 						</li>
 					</nav>
 					<div class="header__btn">
-							<a href="#" class="order">заказать</a>
+						<a href="#" class="order-btn">заказать</a>
+					</div>
+					<div class="top-hamburger">
+						
 					</div>
 				</header>
-				<div class="top_content">
+				<div class="top-content">
 					<div class="top__img">
+						.<img src="img/top-burger.png" class="top__pic">
 					</div>
 					<div class="top__txt">
 						<div class="top__title">
@@ -64,9 +69,11 @@
 					<a class="down-btn__icon" href="#"></a>
 				</div>
 			</div>
+
 		</section>
-		<section class="we-best">
-			<div class="container">
+		
+		<section class="section we-best">
+		<div class="container container_center  container_center-vertical">
 				<div class="best-title">
 					мы лучшие
 				</div>
@@ -75,42 +82,48 @@
 						<div class="best-item-pic">
 							<img class="best-item-img" src="img/meat.png">
 						</div>
+						<div class="best-list__txt">
 						<span>
 							100% свежее мясо
 						</span>
 						<p>
 							Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
 						</p>
+						</div>
 					</li>
 					<li class="best-list__item">
 						<div class="best-item-pic">
 							<img class="best-item-img" src="img/hand.png">
 						</div>
+						<div class="best-list__txt">
 						<span>
 							Ручная  сборка
 						</span>
 						<p>
 							Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.
 						</p>
+						</div>
 					</li>
 					<li class="best-list__item">
 						<div class="best-item-pic">
 							<img class="best-item-img" src="img/natural.png">
 						</div>
+						<div class="best-list__txt">
 						<span>
 							Натуральные  ингредиенты
 						</span>
 						<p>
 							Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
 						</p>
+						</div>
 					</li>
 				</ul>
 			</div>
 		</section>
-		<section class="reviews">
+
+		<section class="section reviews">
 			<ul class="reviews-list">
-				<li class="reviews__item">
-					<img class="reviews__img" src="img/photo-1458890715264-db84f7c6ef13.jpg">
+				<li class="reviews__item" style="background-image: url(img/photo-1458890715264-db84f7c6ef13.jpg);">
 					<div class="reviews__content">
 						<div class="reviews__title">
 							Константин Спилберг
@@ -123,8 +136,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="reviews__item">
-					<img class="reviews__img" src="img/photo-1440606797942-6cc04c045447.jpg">
+				<li class="reviews__item" style="background-image: url(img/photo-1440606797942-6cc04c045447.jpg);">
 					<div class="reviews__content">
 						<div class="reviews__title">
 							Константин Спилберг
@@ -137,8 +149,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="reviews__item">
-					<img class="reviews__img" src="img/photo-1445404590072-16ef9c18bd83.jpg">
+				<li class="reviews__item" style="background-image: url(img/photo-1445404590072-16ef9c18bd83.jpg);">
 					<div class="reviews__content">
 						<div class="reviews__title">
 							Константин Спилберг
@@ -151,8 +162,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="reviews__item">
-					<img class="reviews__img" src="img/photo-1468546818829-25bb337b6646.jpg">
+				<li class="reviews__item" style="background-image: url(img/photo-1468546818829-25bb337b6646.jpg);">
 					<div class="reviews__content">
 						<div class="reviews__title">
 							Константин Спилберг
@@ -165,8 +175,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="reviews__item">
-					<img class="reviews__img" src="img/photo-1438763298591-75a0d42b7265.jpg">
+				<li class="reviews__item" style="background-image: url(img/photo-1438763298591-75a0d42b7265.jpg);">
 					<div class="reviews__content">
 						<div class="reviews__title">
 							Константин Спилберг
@@ -179,8 +188,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="reviews__item">
-					<img class="reviews__img" src="img/photo-1461332682233-b818af4c3a6e.jpg">
+				<li class="reviews__item" style="background-image: url(img/photo-1461332682233-b818af4c3a6e.jpg);">
 					<div class="reviews__content">
 						<div class="reviews__title">
 							Константин Спилберг
@@ -193,8 +201,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="reviews__item">
-					<img class="reviews__img" src="img/photo-1457706924510-773f3c796de3.jpg">
+				<li class="reviews__item" style="background-image: url(img/photo-1457706924510-773f3c796de3.jpg);">
 					<div class="reviews__content">
 						<div class="reviews__title">
 							Константин Спилберг
@@ -207,8 +214,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="reviews__item">
-					<img class="reviews__img" src="img/photo-1458696765561-12142eaead13.jpg">
+				<li class="reviews__item" style="background-image: url(img/photo-1458696765561-12142eaead13.jpg);">
 					<div class="reviews__content">
 						<div class="reviews__title">
 							Константин Спилберг
@@ -223,16 +229,17 @@
 				</li>
 			</ul>
 		</section>
-		<section class="team">
+
+		<section class="section team">
 			<div class="team-content">
 				<div class="team-content__title">
 					команда
 				</div>
-				<ul class="accordeon">
-					<li class="accordeon__line">
+				<ul class="accordeon team-list">
+					<li class="team-list__line">
 						<div class="team-member">
 							<div class="team-member__name">
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="9" viewBox="0 0 12 9"><defs><path id="a" d="M644.5 2462l-4.5-6h9z"/></defs><g transform="translate(-639 -2455)"><use fill="#f9b43b" xlink:href="#a"/></g></svg>
+								<svg class="team-member__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="9" viewBox="0 0 12 9"><defs><path id="a" d="M644.5 2462l-4.5-6h9z"/></defs><g transform="translate(-639 -2455)"><use fill="#f9b43b" xlink:href="#a"/></g></svg>
 								Дэниэл Редклиф
 							</div>
 							<div class="team-member__content">
@@ -249,31 +256,11 @@
 							</div>
 						</div>
 					</li>
-					<li class="accordeon__line">
+					<li class="team-list__line">
 						<div class="team-member">
 							<div class="team-member__name">
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="9" viewBox="0 0 12 9"><defs><path id="a" d="M644.5 2462l-4.5-6h9z"/></defs><g transform="translate(-639 -2455)"><use fill="#f9b43b" xlink:href="#a"/></g></svg>
-								Дэниэл Редклиф
-							</div>
-							<div class="team-member__content team-member__content_active">
-								<div class="team-member__foto">
-								</div>
-								<div class="team-member__description">
-									<div class="team-member__position">
-										Оператор 
-									</div>
-									<div class="team-member__about">
-										С радостью поможет подобрать идеальный бургер и оформить заказ.
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="accordeon__line">
-						<div class="team-member">
-							<div class="team-member__name">
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="9" viewBox="0 0 12 9"><defs><path id="a" d="M644.5 2462l-4.5-6h9z"/></defs><g transform="translate(-639 -2455)"><use fill="#f9b43b" xlink:href="#a"/></g></svg>
-								Дэниэл Редклиф
+								<svg class="team-member__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="9" viewBox="0 0 12 9"><defs><path id="a" d="M644.5 2462l-4.5-6h9z"/></defs><g transform="translate(-639 -2455)"><use fill="#f9b43b" xlink:href="#a"/></g></svg>
+								Ричард Джеймс
 							</div>
 							<div class="team-member__content">
 								<div class="team-member__foto">
@@ -289,11 +276,31 @@
 							</div>
 						</div>
 					</li>
-					<li class="accordeon__line">
+					<li class="team-list__line">
 						<div class="team-member">
 							<div class="team-member__name">
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="9" viewBox="0 0 12 9"><defs><path id="a" d="M644.5 2462l-4.5-6h9z"/></defs><g transform="translate(-639 -2455)"><use fill="#f9b43b" xlink:href="#a"/></g></svg>
-								Дэниэл Редклиф
+								<svg class="team-member__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="9" viewBox="0 0 12 9"><defs><path id="a" d="M644.5 2462l-4.5-6h9z"/></defs><g transform="translate(-639 -2455)"><use fill="#f9b43b" xlink:href="#a"/></g></svg>
+								Джейк Финн
+							</div>
+							<div class="team-member__content">
+								<div class="team-member__foto">
+								</div>
+								<div class="team-member__description">
+									<div class="team-member__position">
+										Оператор 
+									</div>
+									<div class="team-member__about">
+										С радостью поможет подобрать идеальный бургер и оформить заказ.
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="team-list__line">
+						<div class="team-member">
+							<div class="team-member__name">
+								<svg class="team-member__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="9" viewBox="0 0 12 9"><defs><path id="a" d="M644.5 2462l-4.5-6h9z"/></defs><g transform="translate(-639 -2455)"><use fill="#f9b43b" xlink:href="#a"/></g></svg>
+								Николай Иванов
 							</div>
 							<div class="team-member__content">
 								<div class="team-member__foto">
@@ -314,6 +321,175 @@
 			</div>
 			
 		</section>
+		<section class="section menu">
+			<div class="menu__title">
+				меню
+			</div>
+			<div class="">
+				<ul class="accordeon menu-list">
+					<li class="menu__line menu__line_meat">
+						<div class="menu__name-box">
+							<div class="menu__name">Для&nbsp;мясоедов</div>
+						</div>
+						<div class="menu__txt">
+							Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову. 
+						</div>
+					</li>
+					<li class="menu__line menu__line_vegan">
+						<div class="menu__name-box">
+							<div class="menu__name">Вегетарианское</div>
+						</div>
+						<div class="menu__txt">
+							Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову. 
+						</div>
+					</li>
+					<li class="menu__line menu__line_diet">
+						<div class="menu__name-box">
+							<div class="menu__name">Диетическое</div>
+						</div>
+						<div class="menu__txt">
+							Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову. 
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		
+		</section>
+		<section class="section order">
+			<div class="container container_center  container_center-vertical">
+			<div class="section__title section__title_color section__title_center">
+				Закажите доставку
+			</div>
+			<div class="form">
+				<form class="form__elem">
+				<div class="form__content-area">
+					<div class="form__content">
+						<div class="form__row">
+							<label class="form__block">
+								<div class="form__block-title">Имя</div>
+								<input type="text" class="form__input" name="name">
+							</label>
+							<label class="form__block">
+								<div class="form__block-title">Телефон</div>
+								<input type="text" class="form__input" name="phone">
+							</label>
+						</div>
+						<div class="form__row">
+							<label class="form__block">
+								<div class="form__block-title">Улица</div>
+								<input type="text" class="form__input" name="street">
+							</label>
+						</div>
+						<div class="form__row">
+							<label class="form__block">
+								<div class="form__block-title">Дом</div>
+								<input type="text" class="form__input" name="house">
+							</label>
+							<label class="form__block">
+								<div class="form__block-title">Корпус</div>
+								<input type="text" class="form__input" name="corp">
+							</label>
+							<label class="form__block">
+								<div class="form__block-title">Квартира</div>
+								<input type="text" class="form__input" name="flat">
+							</label>
+							<label class="form__block form__block_stage">
+								<div class="form__block-title">Этаж</div>
+								<input type="text" class="form__input" name="stage">
+							</label>
+						</div>
+					</div>
+					<div class="form__content">
+						<div class="form__row">
+							<label class="form__block">
+								<div class="form__block-title">Комментарий</div>
+								<textarea class="form__input comment" name="comment"></textarea>
+							</label>
+						</div>
+						<div class="form__row">
+							<label class="form__block-radio">
+								<input class="radio__btn" name="radio-test" type="radio">
+								<div class="radio__label">Потребуется сдача</div>
+							</label>
+							<label class="form__block-radio">
+								<input class="radio__btn" name="radio-test" type="radio">
+								<div class="radio__label">Оплата по карте</div>
+							</label>
+						</div>
+						<div class="form__row">
+							<label class="form__block-radio">
+								<input class="check__btn" name="check-test" type="checkbox">
+								<div class="check__label">Не перезванивать</div>
+							</label>
+						</div>
+						<div class="form__row form__btn">
+							<input type="submit" class="order-btn" value="заказать">
+							<input type="reset" class="order-btn reset-btn" value="Очистить">
+						</div>
+					</div>
+					</div>
+				</form>
+			</div>
+			</div>
+		</section>
+		<section class="section contacts">
+			<div class="container container_center">
+			<footer class="footer">
+			<div class="container container_center">
+				<div class="footer__content">
+					<div class="footer__block">
+						<div class="footer__adress">
+							Санкт-Петербург, ул.Бабушкина, д.12/1, 15
+						</div>
+						<div class="footer__phone">
+							<div class="phone-icon">
+								<svg class="phone-pic">
+									<use xlink:href="img/sprite.svg#phone"></use>
+								</svg>
+							</div>
+							<div class="footer__phone-number">+7 (812) 377-13-77</div>
+						</div>
+					</div>
+					<div class="footer__block">
+						<ul class="social">
+							<li class="social__item">
+								<a href="#" class="social__link">
+								<svg class="social-pic">
+									<use xlink:href="img/sprite.svg#vk"></use>
+								</svg>
+								</a>
+								</li>
+								<li class="social__item">
+								<a href="#" class="social__link">
+								<svg class="social-pic">
+									<use xlink:href="img/sprite.svg#fb"></use>
+								</svg>
+								</a>
+								</li>
+								<li class="social__item">
+								<a href="#" class="social__link">
+								<svg class="social-pic">
+									<use xlink:href="img/sprite.svg#inst"></use>
+								</svg>
+								</a>
+								</li>
+								<li class="social__item">
+								<a href="#" class="social__link">
+								<svg class="social-pic">
+									<use xlink:href="img/sprite.svg#twitter"></use>
+								</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+				
+			</footer>
+			</div>
+		</section>
+		
 	</div>
 </body>
 </html>
