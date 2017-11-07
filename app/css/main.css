@@ -297,7 +297,11 @@ ul {
               flex-direction: column; } }
 
 @media screen and (max-width: 768px) {
-  .top-img {
+  .top__img {
+    text-align: center; } }
+
+@media screen and (max-width: 480px) {
+  .top__img {
     text-align: center; } }
 
 .top__pic {
@@ -306,6 +310,9 @@ ul {
   margin-left: -1.75rem;
   margin-top: -0.25rem; }
   @media screen and (max-width: 768px) {
+    .top__pic {
+      width: 80%; } }
+  @media screen and (max-width: 480px) {
     .top__pic {
       width: 80%; } }
 
