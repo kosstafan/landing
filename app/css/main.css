@@ -121,15 +121,12 @@ ul {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .down-btn__icon {
-  position: fixed;
-  z-index: 10;
-  bottom: 2.5rem;
   width: 1.25rem;
   height: 1.25rem;
   border: 0.125rem solid #fff;
@@ -859,13 +856,11 @@ ul {
   -webkit-border-radius: 0.3125rem;
           border-radius: 0.3125rem;
   width: 100%;
-  outline: none; }
-  @media screen and (max-width: 480px) {
-    .form__input {
-      height: 2.1875rem; } }
+  outline: none;
+  height: 2.1875rem; }
 
 .form__row {
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -932,7 +927,7 @@ ul {
 
 .comment {
   resize: none;
-  height: 6.875rem;
+  height: 7.8125rem;
   outline: none;
   padding: 0; }
 
