@@ -52,7 +52,8 @@ ul {
   padding: 0; }
 
 .wrapper {
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
 
 .container_center {
   margin: 0 auto;
@@ -1514,6 +1515,7 @@ ul {
   height: 330px;
   background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
+  z-index: 2;
   top: 0;
   left: 90px;
   -webkit-border-radius: 5px;
