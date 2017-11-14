@@ -45,14 +45,20 @@ html {
       font-size: 13px; } }
 
 body {
-  margin: 0; }
+  margin: 0;
+  position: relative;
+  border: 5px solid red; }
 
 ul {
   margin: 0;
   padding: 0; }
 
+.locked {
+  overflow: hidden; }
+
 .wrapper {
   width: 100%;
+  height: 100%;
   overflow: hidden; }
 
 .container_center {
@@ -140,7 +146,7 @@ ul {
   border-right: transparent; }
 
 .fulscreen-menu {
-  position: absolute;
+  position: fixed;
   z-index: 10;
   left: 0;
   right: 0;
