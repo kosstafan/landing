@@ -167,6 +167,10 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   display: none; }
+  .fulscreen-menu .top-logo {
+    position: absolute;
+    left: 0;
+    top: 5px; }
 
 .fulscreen-menu-list {
   display: -webkit-flex;
