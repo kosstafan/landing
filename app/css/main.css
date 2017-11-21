@@ -219,6 +219,10 @@ ul {
 .fulscreen-menu-list__close-img {
   fill: #fff; }
 
+@media screen and (max-width: 48rem) {
+  .onepage-pagination {
+    display: none; } }
+
 .top {
   background-color: #000;
   background-image: url(../img/top-bg.png);
@@ -759,11 +763,14 @@ ul {
               justify-content: center;
       margin-bottom: 1.875rem; } }
 
+.team-member {
+  cursor: pointer;
+  margin-bottom: 1.25rem; }
+
 .team-member__name {
   font-family: 'gagalinregular';
   color: #fff;
-  font-size: 0.875rem;
-  margin-bottom: 1.25rem; }
+  font-size: 0.875rem; }
   @media screen and (max-width: 48rem) {
     .team-member__name {
       font-size: 1.5rem; } }
