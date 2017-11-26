@@ -1158,6 +1158,8 @@ a {
     content: '\2022';
     font-size: 1.875rem;
     color: #e35028; }
+  .radio__btn:focus + .radio__label:before {
+    border: 1px solid #e94400; }
 
 .radio__label {
   color: #fff;
@@ -1202,7 +1204,9 @@ a {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
   .radio__label:hover {
     cursor: pointer; }
 
@@ -1212,6 +1216,8 @@ a {
     content: '\2714';
     font-size: 1.5625rem;
     color: #e35028; }
+  .check__btn:focus + .check__label:before {
+    border: 1px solid #e94400; }
 
 .check__label {
   color: #fff;
@@ -1254,7 +1260,9 @@ a {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
   .check__label:hover {
     cursor: pointer; }
 

@@ -117,6 +117,9 @@ $phones: 480px
 		content: '\2022';
 		font-size: 1.875rem;
 		color: #e35028;
+	&:focus + .radio__label:before
+		border: 1px solid #e94400
+
 
 .radio__label
 	color: #fff
@@ -145,8 +148,11 @@ $phones: 480px
 		display: inline-flex
 		justify-content: center
 		align-items: center
+		box-sizing: border-box
 	&:hover
 		cursor: pointer;
+
+
 
 .check__btn
 	display: none;
@@ -154,6 +160,8 @@ $phones: 480px
 		content: '\2714';
 		font-size: 1.5625rem;
 		color: #e35028;
+	&:focus + .check__label:before
+		border: 1px solid #e94400
 
 .check__label
 	color: #fff
@@ -181,6 +189,7 @@ $phones: 480px
 		display: inline-flex
 		justify-content: center
 		align-items: center
+		box-sizing: border-box
 	&:hover
 		cursor: pointer;
 
@@ -261,3 +270,5 @@ $phones: 480px
 
 .error
 	color: #e94400
+
+
