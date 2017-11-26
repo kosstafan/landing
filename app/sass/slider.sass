@@ -1,0 +1,380 @@
+// resolutions
+$tablets: 768px
+$phones: 480px
+
+@import amedia.sass
+.slider
+	/* Style for "Rectangle" */
+	background-color: #f9b43b;
+	background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+
+.slider-area
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	height: 100%
+	justify-content: center
+	align-items: center
+	position: relative
+	overflow: hidden
+	position: absolute
+	left: 0
+	right: 0
+
+.slider-window
+	display: flex
+	height: 100%
+	width: 69vw
+	align-items: center
+	justify-content: center
+	overflow: hidden
+	position: relative
+	+tablets
+		width: 90vw
+
+	
+
+.slider-blocks
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	height: 72%
+	position: absolute
+	left: 0
+	+tablets
+	height: 100%
+		
+
+.slider-block
+	position: relative
+	height: 72%
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	width: 43.5vw
+	+tablets
+		width: 90%
+		height: 40%
+		text-align: center
+	+phones
+		height: 50%
+	&_img
+		justify-content: center
+		+tablets
+			box-sizing: border-box
+			margin-top: 90px
+		+phones
+			width: 100%
+			margin-top: 50px
+	&_txt
+		+tablets
+			width: 90%
+		+phones
+			width: 100%
+
+.slider-item
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	height: 100%
+	width: 69vw
+	+tablets
+		flex-direction: column
+		height: 100%
+		width: 90vw
+	+phones
+		width: 90vw
+
+.slider__content
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	justify-content: flex-start
+	height: 100%
+	overflow: hidden
+
+.slider__title
+	font-family: 'gagalinregular'
+	font-size: 4.5rem
+	color: #fff
+	line-height: 4rem
+	+tablets
+		margin-top: 30px
+	+phones
+		font-size: 3.125rem
+
+.slider__txt
+	color: #fff
+	font-family: 'ubuntulight'
+	font-size: 14px
+	line-height: 24px
+	margin-top: 50px
+	+tablets
+		margin-top: 30px
+	+phones
+		margin-top: 25px
+
+.slider__prise
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: flex-end
+	margin-top: 35px
+	+tablets
+		justify-content: center
+		margin-top: 30px
+	+phones
+		margin-top: 25px
+
+.prise-title
+	font-family: 'gagalinregular'
+	font-size: 30px
+	color: #e35028
+	+phones
+		font-size: 24px
+
+.prise-value
+	font-size: 72px
+	line-height: 64px
+	+phones
+		font-size: 45px
+
+.prise-btn
+	margin-left: 30px
+	margin-bottom: 10px
+	+phones
+		margin-bottom: 20px
+
+.slider__pic
+	width: 100%
+	align-self: center
+	+tablets
+		align-self: flex-end
+		width: 75%
+
+
+.slider__img
+	width: 100%
+	+phones
+		width: 95%
+
+
+.composition-pic
+	width: 90px
+	height: 90px
+	background-color: rgba(227, 80, 40, .4)
+	position: absolute
+	top: 0
+	left: 0
+	border-radius: 5px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	align-items: center
+	cursor: pointer
+	&:hover+.composition-content
+		display: block
+	+tablets
+		left: 20px
+	+phones
+		left: 0
+
+
+.composition-img
+	width: 46px
+	height: 44px
+	fill: #fff
+	margin-top: 15px
+
+.composition-txt
+	color: #fff
+	font-family: 'gagalinregular'
+	font-size: 14px
+
+.composition-content
+	width: 270px
+	height: 330px
+	background-color: rgba(255, 255, 255, .9)
+	position: absolute
+	z-index: 2
+	top: 0
+	left: 90px
+	border-radius: 5px
+	+tablets
+		left: 110px
+		width: 320px
+		box-sizing: border-box
+		padding-right: 70px
+	+phones
+		left: 90px
+		width: 350px
+
+.composition-content__close-pic
+	position: absolute
+	z-index: 5
+	top: 20px
+	right: 20px
+	display: none
+	+tablets
+		display: block
+
+.calories-pic
+	position: absolute
+	left: 0
+	bottom: 0
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	align-items: center
+	+tablets
+		top: 0
+		right: 20px
+		left: initial
+		bottom: initial
+	+phones
+		right: 0
+
+.calories-img
+	width: 60px
+	height: 60px
+	fill: rgba(248, 213, 138, .5)
+
+.calories-txt
+ color: rgba(248, 213, 138, .5)
+ font-family: 'gagalinregular'
+ font-size: 14px
+ margin-top: -36px
+ padding-left: 4px
+ line-height: 28px
+
+
+.calories-value
+	font-size: 20px
+	line-height: 30px
+
+.slider-btn
+	margin: 0 auto
+	position: absolute
+	z-index: 3
+	top: 50%
+	&_left
+		left: 0
+	&_right
+		right: 0
+	+tablets
+		&_left
+			left: 45px			
+		&_right
+			right: 45px
+	+phones
+		&_left
+			left: 0
+		&_right
+			right: 0
+
+.slider-link
+	display: block
+	
+
+.slider-icon
+	width: 27px
+	height: 13px
+	fill: #fff
+	transform-origin: 50% 50%
+
+.slider-icon_left
+	transform: rotate(90deg)
+
+
+.slider-icon_right
+	transform: rotate(-90deg)
+
+.composition-list
+	padding: 20px
+	+tablets
+		padding-right: 0
+
+.composition-content
+	display: none
+	&:hover
+		display: block
+
+.composition-list__line
+	list-style-type: none
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	margin-bottom: 9px
+	&:last-child
+		margin-bottom: 0
+
+.composition-list__pic
+	width: 49px
+	text-align: center
+
+.composition-list__beef
+	width: 44px
+	height: 40px
+	fill: #e74500
+
+.composition-list__name
+	color: #2f3234
+	font-family: 'ubuntumedium'
+	font-size: 14px
+	margin-left: 21px
+
+.composition-list__weight
+	color: #2f3234
+	font-family: 'ubuntulight'
+	font-size: 14px
+	margin-left: auto
+
+.composition-list__buns
+	width: 48px
+	height: 30px
+	fill: #f4c100
+
+.composition-list__salad
+	width: 38px
+	height: 38px
+	fill: #6cd52d
+
+.composition-list__sauce
+	width: 41px
+	height: 43px
+	fill: #e74500
+
+.composition-list__cucumber
+	width: 43px
+	height: 37px
+	fill: #6cd52d
+
+.composition-list__cheese
+	width: 43px
+	height: 37px
+	fill: #f4c100

@@ -1,0 +1,87 @@
+.we-best {
+  background-image: url(../img/bg-webest.jpg); }
+
+.best-title {
+  text-align: center;
+  font-family: 'gagalinregular';
+  color: #333538;
+  font-size: 4.5rem;
+  padding-bottom: 5rem; }
+  @media screen and (max-width: 768px) {
+    .best-title {
+      margin-top: 7.8125rem;
+      margin-bottom: 10.9375rem;
+      padding-bottom: 0; } }
+  @media screen and (max-width: 480px) {
+    .best-title {
+      margin-top: 3.75rem;
+      margin-bottom: 5.3125rem; } }
+
+.best-list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media screen and (max-width: 480px) {
+    .best-list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+
+.best-list__item {
+  text-align: center;
+  width: 33%; }
+  @media screen and (max-width: 480px) {
+    .best-list__item {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 94%;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: 45px; } }
+
+@media screen and (max-width: 480px) {
+  .best-list__txt {
+    text-align: left;
+    width: 23.75rem;
+    margin-left: auto; } }
+
+.best-list__item span {
+  font-family: 'lifehackmedium';
+  font-size: 1.5rem;
+  color: #2f3234; }
+
+.best-list__item p {
+  font-family: 'ubuntulight';
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #2f3234; }
+
+.best-item-pic {
+  padding-bottom: 1.875rem; }
+  @media screen and (max-width: 480px) {
+    .best-item-pic {
+      width: 21%;
+      text-align: center;
+      margin-left: 20px; } }

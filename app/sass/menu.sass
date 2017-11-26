@@ -1,0 +1,114 @@
+// resolutions
+$tablets: 768px
+$phones: 480px
+
+@import amedia.sass
+.menu
+	background-image: url(../img/menu-bg.jpg);
+	position: relative
+
+.menu__title
+	font-family: 'gagalinregular';
+	font-size: 4.5rem
+	color: #fff
+	margin-left: 5.9375rem
+	padding-top: 6.875rem
+
+.menu-list
+	position: absolute
+	right: 0
+	top: 0
+	bottom: 0
+	height: 100%
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: flex-end
+
+.menu__line
+	list-style-type: none
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	background-color: rgba(#2f3234, .93)
+	width: 5rem
+	overflow: hidden
+	transition: all .5s;
+
+
+
+
+.menu__name-box
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 5rem
+	cursor: pointer
+	+tablets
+		align-items: flex-end
+
+	
+.menu__name
+	font-family: 'gagalinregular';
+	color: #fff
+	font-size: 2.5rem
+	transform: rotate(-90deg)
+	+tablets
+		transform: rotate(-90deg) translateX(50%)
+
+
+
+.menu__line_meat
+	background-image: url(../img/meat-eat.jpg)
+	background-position: left
+	background-repeat: no-repeat
+	background-size: 5rem 100%
+
+.menu__line_vegan
+	background-image: url(../img/vegan-bg.jpg)
+	background-position: left
+	background-repeat: no-repeat
+	background-size: 5rem 100%
+
+.menu__line_diet
+	background-image: url(../img/diet-bg.jpg)
+	background-position: left
+	background-repeat: no-repeat
+	background-size: 5rem 100%
+
+.menu__txt
+	overflow: hidden
+	
+	//padding: 3.9375rem 2.1875rem
+	font-family: 'ubuntulight'
+	font-size: 0.875rem
+	line-height: 1.5rem
+	color: #fff
+	max-width: 100%
+	overflow: hidden
+	box-sizing: border-box
+	transition: padding .5s
+	opacity: 0
+	
+	
+
+
+
+.menu__line_active
+	width: 39.0625rem
+	+tablets
+		width: calc(100% - 10rem)
+	+phones
+		width: calc(100% - 10rem)
+	& .menu__txt
+		padding: 3.9375rem 2.1875rem
+		opacity: 1
+		transition: opacity .3s .5s, padding .5s
