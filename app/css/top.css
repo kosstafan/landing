@@ -1,0 +1,202 @@
+.top {
+  background-color: #000;
+  background-image: url(../img/top-bg.png);
+  position: relative; }
+
+.fixed-nav {
+  position: fixed;
+  z-index: 22;
+  right: 3.125rem;
+  top: 5.625rem; }
+  @media screen and (max-width: 768px) {
+    .fixed-nav {
+      display: none; } }
+
+.fixed-nav__item {
+  color: #fff;
+  width: 1.125rem;
+  height: 1.125rem;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  text-align: center;
+  list-style-type: none;
+  margin-bottom: 0.3125rem; }
+  .fixed-nav__item:hover {
+    border: 0.0625rem solid #fff; }
+
+.fixed-nav__link {
+  text-decoration: none;
+  color: #fff;
+  line-height: 1.1875rem;
+  font-size: 1.5rem; }
+
+.fixed-nav__item_active {
+  border: 0.0625rem solid #fff; }
+
+.header {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'ubunturegular';
+  padding-top: 0.625rem;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%; }
+
+.top-logo {
+  width: 5.75rem;
+  height: 4.3125rem;
+  position: relative;
+  z-index: 20; }
+  @media screen and (max-width: 768px) {
+    .top-logo {
+      margin-left: 25px; } }
+
+.nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto; }
+  @media screen and (max-width: 768px) {
+    .nav {
+      display: none; } }
+
+.nav__line {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  margin-right: 0.9375rem;
+  font-size: 0.8125rem;
+  list-style-type: none; }
+  .nav__line:after {
+    content: "";
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flex;
+    display: -o-inline-flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 0.25rem;
+    height: 0.25rem;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background-color: #fff;
+    margin-left: 0.9375rem; }
+  .nav__line:last-child:after {
+    display: none; }
+
+.header__btn {
+  list-style-type: none;
+  margin-left: 0;
+  margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .header__btn {
+      margin-left: auto; } }
+
+.order-btn {
+  font-family: 'ubuntumedium';
+  color: #fff;
+  text-decoration: none;
+  background-color: #e94400;
+  padding: 0.625rem 1.125rem;
+  -webkit-border-radius: 0.3125rem;
+          border-radius: 0.3125rem;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8125rem;
+  text-transform: uppercase; }
+
+.top-content {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%; }
+  @media screen and (max-width: 768px) {
+    .top-content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+
+@media screen and (max-width: 768px) {
+  .top__img {
+    text-align: center; } }
+
+@media screen and (max-width: 480px) {
+  .top__img {
+    text-align: center; } }
+
+.top__pic {
+  width: 100%;
+  height: 100%;
+  margin-left: -1.75rem;
+  margin-top: -0.25rem; }
+  @media screen and (max-width: 480px) {
+    .top__pic {
+      width: 80%; } }
+
+.top__txt {
+  font-family: 'lifehackmedium';
+  color: #fff;
+  font-size: 4.0625rem;
+  line-height: 3.8125rem;
+  margin-left: 0.8125rem; }
+  @media screen and (max-width: 768px) {
+    .top__txt {
+      text-align: center;
+      margin-left: 0; } }
+
+.top__title {
+  font-family: 'gagalinregular';
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  line-height: 7.375rem;
+  color: #f5c108; }
+
+.top-hamburger {
+  position: relative;
+  margin-right: 1.875rem;
+  margin-left: 1.875rem;
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .top-hamburger {
+      display: block; } }

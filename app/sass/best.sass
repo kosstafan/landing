@@ -1,0 +1,71 @@
+// resolutions
+$tablets: 768px
+$phones: 480px
+
+@import amedia.sass
+.we-best
+	background-image: url(../img/bg-webest.jpg);
+
+.best-title
+	text-align: center;
+	font-family: 'gagalinregular';
+	color: #333538;
+	font-size: 4.5rem;
+	padding-bottom: 5rem
+	+tablets
+		margin-top: 7.8125rem
+		margin-bottom: 10.9375rem
+		padding-bottom: 0
+	+phones
+		margin-top: 3.75rem
+		margin-bottom: 5.3125rem
+
+.best-list
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	list-style-type: none;
+	justify-content: center;
+	+phones
+		flex-direction: column
+		align-items: center
+
+.best-list__item
+	text-align: center;
+	width: 33%;
+	+phones
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		width: 94%
+		align-items: center
+		margin-bottom: 45px
+
+
+.best-list__txt
+	+phones
+		text-align: left
+		width: 23.75rem
+		margin-left: auto
+
+.best-list__item span
+	font-family: 'lifehackmedium';
+	font-size: 1.5rem;
+	color: #2f3234;
+
+.best-list__item p
+	font-family: 'ubuntulight';
+	font-size: 0.875rem;
+	line-height: 1.5rem;
+	color: #2f3234;
+
+.best-item-pic
+	padding-bottom: 1.875rem;
+	+phones
+		width: 21%
+		text-align: center
+		margin-left: 20px

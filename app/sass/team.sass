@@ -1,0 +1,124 @@
+// resolutions
+$tablets: 48rem
+$phones: 30rem
+
+@import amedia.sass
+
+.team
+	background-image: url(../img/team-bg.jpg);
+	position: relative;
+
+.team-content
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0
+	left: 50%
+	background-color: rgba(47, 50, 52, 0.93);
+	padding: 5.625rem 0 0 5rem
+	+tablets
+		left: 0
+		padding: 0
+
+.team-content__title
+	font-family: 'gagalinregular';
+	font-size: 4.5rem;
+	color: #f9b43b;
+	margin-bottom: 5rem
+	width: 100%
+	+tablets
+		text-align: center
+		margin-top: 7.8125rem
+	+phones
+		margin-top: 4.0625rem
+
+.team-list
+	+tablets
+		margin-top: 7.8125rem
+		width: 100%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		align-items: center
+		text-align: center
+	+phones
+		margin-top: 6.25rem
+
+.team-list__line
+	list-style-type: none;
+	margin-bottom: 2.1875rem
+	+tablets
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		margin-bottom: 1.875rem
+
+.team-member
+	cursor: pointer
+	margin-bottom: 1.25rem
+
+.team-member__name
+	font-family: 'gagalinregular';
+	color: #fff;
+	font-size: 0.875rem;
+	+tablets
+		font-size: 1.5rem
+	
+.team-member__content
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	padding-left: 0.625rem
+	height: 0;
+	overflow: hidden;
+	+tablets
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		align-items: center
+
+.team-member__foto
+	background-image: url(../img/aphex-jpg.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	width: 6.25rem;
+	height: 6.25rem;
+	border-radius: 50%;
+	+tablets
+		margin-bottom: 1.375rem
+
+.team-member__description
+	width: 13.125rem;
+	font-size: 0.875rem;
+	color: #fff;
+	padding-left: 1.25rem
+	+tablets
+		width: 20.625rem
+
+.team-member__position
+	font-family: "ubuntubold";
+
+.team-member__about
+	font-family: 'ubuntulight';
+	line-height: 1.5rem
+	padding-top: 0.9375rem
+
+.team-list__line_active
+	& .team-member__content
+		height: auto;
+	& .team-member__name
+		color: #f9b43b
+	& .team-member__icon
+		transform: rotate(180deg)
